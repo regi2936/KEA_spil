@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+    position: relative;
+}
+
+/*********************************EFFEKTER*********************************/
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/****************TITELSÆRM**********************/
+#start {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    background-color: white;
+    background-image: url(titelskaermfig.svg);
+    background-size: 100%;
+}
+
+
+
+#play {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    background-image: url(play.svg);
+    background-size: 100%;
+    left: 30vw;
+    top: 13vw;
+    cursor: pointer;
+}
+
+/**********************SPILSKÆRM***********************/
+
+#game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(spilskaerm.svg);
+}
+
+#kort_bagside1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 1vw;
+    left: 1vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/*#is {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 1vw;
+    left: 1vw;
+    background-image: url(is.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}*/
+
+
+#kort_bagside2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 20vw;
+    left: 1vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#kort_bagside3 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 1vw;
+    left: 20vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#kort_bagside4 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 20vw;
+    left: 20vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#kort_bagside5 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 1vw;
+    left: 39vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#kort_bagside6 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 20vw;
+    left: 39vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#kort_bagside7 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 1vw;
+    left: 58vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+#kort_bagside8 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 20vw;
+    left: 58vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+#kort_bagside9 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 1vw;
+    left: 77vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+#kort_bagside10 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 20vw;
+    left: 77vw;
+    background-image: url(kort%20bagside.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#stik {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 45vw;
+    left: 2vw;
+    background-image: url(stik.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#time {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 45vw;
+    left: 85vw;
+    background-image: url(time.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#settings {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 45vw;
+    left: 75vw;
+    background-image: url(settings.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
